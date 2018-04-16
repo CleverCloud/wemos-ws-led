@@ -38,5 +38,3 @@ You also have to clone the two git repositories specified at the top of the file
 2. Change the SSID, wifi password and the hostname (your_app_id.cleverapps.io).
 3. Click on the `Verify` button.
 4. If there is no error, `Upload` it to the Wemos.
-
-## 
