@@ -10,6 +10,8 @@ You can change the color of the strip thanks to the interface given by the [wemo
 
 The websocket client waits for a string that defines the color (format: RRRGGGBBB).
 
+> :rotating_light: If the first LED flashes red, the connection is closed. Verify your network configuration and restart the Wemos.
+
 ## Installation
 
 ### Hardware
