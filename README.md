@@ -32,6 +32,8 @@ On Linux, it should work out of the box.
 
 For Windows and Mac OS, you need to dowload a driver: https://wiki.wemos.cc/downloads
 
+For Mac OS, here is a detailed article on how to get started with Wemos: https://blog.rjdlee.com/getting-started-with-wemos-d1-on-mac-osx/
+
 #### Arduino IDEO
 
 Install the Arduino IDE: https://www.arduino.cc/en/Main/Software
