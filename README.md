@@ -22,6 +22,8 @@ Connect the LED strip to the Wemos using the small cables:
  - Connect the white cable of the LED strip to the GND (ground) of the Wemos
  - Connect the green cable of the LED strip to the D4 of the Wemos
 
+Here is how it should look like: [howitshouldlooklike.jpg](https://raw.githubusercontent.com/CleverCloud/wemos-ws-led/master/howitshouldlooklike.jpg)
+
 Now, plug the Wemos into your computer.
 
 ### Software
