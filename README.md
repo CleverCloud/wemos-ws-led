@@ -16,11 +16,23 @@ The websocket client waits for a string that defines the color (format: RRRGGGBB
 
 ### Hardware
 
-Plug the LED strip to the Wemos and the Wemos to the computer.
+Connect the LED strip to the Wemos using the small cables:
+
+ - Connect the red cable of the LED strip to the +5V of the Wemos
+ - Connect the white cable of the LED strip to the GND (ground) of the Wemos
+ - Connect the green cable of the LED strip to the D4 of the Wemos
+
+Now, plug the Wemos into your computer.
 
 ### Software
 
-#### Install plugins
+On Linux, it should work out of the box.
+
+For Windows and Mac OS, you need to dowload a driver: https://wiki.wemos.cc/downloads
+
+#### Arduino IDEO
+
+Install the Arduino IDE: https://www.arduino.cc/en/Main/Software
 
 In order to interact with the Wemos, you have to configure the Arduino IDE. If you can't find the `WeMos D1 R2 & mini` board in `Tools > Board`, do the following:
 
