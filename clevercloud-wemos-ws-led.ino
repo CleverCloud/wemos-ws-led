@@ -7,7 +7,7 @@
 #define WIFI_PASSWORD     "INSERT YOUR WIFI PASSWORD HERE"
 #define WEBSOCKET_HOST    "INSERT YOUR HOSTNAME HERE"
 #define WEBSOCKET_PORT    80
-#define WEBSOCKET_PATH    "/"
+#define WEBSOCKET_PATH    "/ws"
 
 struct RGB {
   byte r;
