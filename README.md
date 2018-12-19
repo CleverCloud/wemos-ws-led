@@ -46,7 +46,9 @@ In order to interact with the Wemos, you have to configure the Arduino IDE. If y
 4. Install the `ESP8266 by ESP8266 community`.
 5. Choose the `WeMos D1 R2 & mini` in `Tools > Board`.
 
-You also have to clone the two git repositories specified at the top of the file into the `libraries` folder. (open `File > Preferences` and look at the Sketchbook location to find the `libraries` path).
+You also have to clone the two git repositories specified at the top of the file https://github.com/CleverCloud/wemos-ws-led/blob/master/clevercloud-wemos-ws-led.ino into the `libraries` folder. (open `File > Preferences` and look at the Sketchbook location to find the `libraries` path).
+
+You should also clone this repository under the path where your Arduino IDE is installed
 
 #### Upload to the board
 
