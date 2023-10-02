@@ -15,7 +15,7 @@ struct RGB {
   byte b;
 };
 
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(PIXEL_COUNT, D4, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip(PIXEL_COUNT, D4, NEO_GRB + NEO_KHZ800);
 WebSocketClient wsClient;
 WiFiClient client;
 
@@ -33,7 +33,6 @@ void setup() {
   color = {0, 0, 0};
   scrolling = 0;
   strip.begin();
-  strip.show();
 
   setup_wifi();
   setup_websocket();
@@ -41,13 +40,14 @@ void setup() {
 
 void loop() {
   // If connection fails / breaks, the first LED blinks red
-  if (!client.connected() || !connected) {
+  if (!connected || !client.connected()) {
     renderLEDColor(0, {255, 0, 0});
     delay(500);
     renderLEDColor(0, {0, 0, 0});
     delay(500);
   } else if (scrolling > 0) { // If scrolling is greater than 0, render LEDs
-    renderLED(strip.numPixels() - scrolling);
+    //renderLED(strip.numPixels() - scrolling);
+    renderLEDColor(strip.numPixels() - scrolling, color);
     delay(20);
     scrolling--;
   } else {
@@ -75,6 +75,10 @@ void loop() {
 
       // Start scrolling animation
       scrolling = strip.numPixels();
+    }
+    else {
+      // Slow down loop avoiding overheating
+      delay(20);
     }
   }
 }
